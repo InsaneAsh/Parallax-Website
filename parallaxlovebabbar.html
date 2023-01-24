@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parallax website for love babbar</title>
+	<link href='https://fonts.googleapis.com/css?family=Rampart One' rel='stylesheet'>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		#wrapper{
+			height: 100vh;
+			overflow-x: hidden;
+			overflow-y: auto;
+			perspective: 10px;
+		}
+
+		.container{
+			display: flex;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			transform-style: preserve-3d;
+			height: 100%;
+			z-index: -1;
+		}
+		.foreground, .background{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			object-fit: cover;
+			
+		}
+
+		.background{
+			transform: translateZ(-40px) scale(6);
+		}
+
+		.foreground{
+			transform: translateZ(-20px) scale(3);
+		}
+
+		.container .heading{
+			line-spacing: ;
+			font-family: 'Rampart One';
+			color: white;
+			font-size: 150px;
+			position: absolute;
+			top: 100px;
+		}
+
+		section{
+			background-color: rgb(47, 45, 47);
+			color: white;
+			padding: 5rem 0;
+
+		}
+
+		section .para{
+			font-size: 1.5rem;
+			padding: 0 6rem;
+			margin: 5rem 0;
+		}
+
+		.secHeading{
+			padding: 0 6rem;
+			font-size: 4em;
+		}
+		.bg{
+			position: relative;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+			height: 500px;
+			width: 100%;
+		}
+
+		.bg h2{
+			 text-shadow: 0 2px 1px #747474, 
+      -1px 3px 1px #767676, 
+      -2px 5px 1px #787878, 
+      -3px 7px 1px #7a7a7a,
+      -4px 9px 1px #7f7f7f,
+      -5px 11px 1px #838383,
+      -6px 13px 1px #878787,
+      -7px 15px 1px #8a8a8a, 
+      -8px 17px 1px #8e8e8e;
+			box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+			position: absolute;
+			top: 42%;
+			left: 42%;
+			font-size: 5em;
+			background-color: white;
+			color: #121212;
+			padding: 1rem;
+			border: 0px;
+			border-radius: 5px;
+		}
+
+		.bg1{
+			background-image: url("./assets1/sport-1.jpg");
+		}
+
+		.bg2{
+			background-image: url("./assets1/sport-2.jpg");
+		}
+
+		.bg3{
+			background-image: url("./assets1/sport-3.jpg");
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<img src="assets1/background.png" class="background">
+			<img src="assets1/foreground.png" class="foreground">
+			<h1 class="heading">ASHUTOSH</h1>
+			
+		</div>
+		<section>
+			<h1 class="secHeading"> ADVENTURE TIME !</h1>
+			<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div class="bg bg1">
+			<h2> Biking</h2>
+		</div>
+			<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div class="bg bg2">
+			<h2>Gliding</h2>	
+		</div>
+			<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div class="bg bg3">
+			<h2> Surfing</h2>
+		</div>
+			<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br><br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		</section>
+		
+	</div>
+</body>
+</html>
